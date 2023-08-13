@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''AirBnB clone project File Storage'''
+'''AirBnB_clone'''
 import json
 from models.base_model import BaseModel
 from models.user import User
@@ -12,15 +12,6 @@ from models.review import Review
 
 class FileStorage:
     """ This is a storage engine for AirBnB clone project
-    Class Methods:
-        all: Returns the object
-        new: updates the dictionary id
-        save: Serializes, or converts Python objects into JSON strings
-        reload: Deserializes, or converts JSON strings into Python objects.
-    Class Attributes:
-        __file_path (str): The name of the file to save objects to.
-        __objects (dict): A dictionary of instantiated objects.
-        class_dict (dict): A dictionary of all the classes.
     """
 
     __file_path = 'file.json'
