@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 from models.base_model import BaseModel
 
+#test_base_model_dict.py
+
 my_model = BaseModel()
 my_model.name = "My_First_Model"
 my_model.my_number = 89
