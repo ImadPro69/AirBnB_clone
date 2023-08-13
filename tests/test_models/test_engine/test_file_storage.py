@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""Defines unittests for models/engine/file_storage.py.
-Unittest classes:
-    TestFileStorage_instantiation
-    TestFileStorage_methods
+"""
+Defines unittests for models/engine/file_storage.py.
 """
 import os
 import pep8
@@ -21,7 +19,9 @@ from models.review import Review
 
 
 class TestFileStorage_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the FileStorage class."""
+    """
+    Unittests for testing instantiation of the FileStorage class.
+    """
 
     def test_FileStorage_instantiation_no_args(self):
         self.assertEqual(type(FileStorage()), FileStorage)
@@ -41,7 +41,9 @@ class TestFileStorage_instantiation(unittest.TestCase):
 
 
 class TestFileStorage_methods(unittest.TestCase):
-    """Unittests for testing methods of the FileStorage class."""
+    """
+    Unittests for testing methods of the FileStorage class.
+    """
 
     @classmethod
     def setUp(self):
@@ -158,31 +160,9 @@ class TestFileStorage_methods(unittest.TestCase):
                 self.assertEqual(line, "{}")
         self.assertIs(a_storage.reload(), None)
 
-    """def test_reload(self):
-        bm = BaseModel()
-        us = User()
-        st = State()
-        pl = Place()
-        cy = City()
-        am = Amenity()
-        rv = Review()
-        models.storage.new(bm)
-        models.storage.new(us)
-        models.storage.new(st)
-        models.storage.new(pl)
-        models.storage.new(cy)
-        models.storage.new(am)
-        models.storage.new(rv)
-        models.storage.save()
-        models.storage.reload()
-        objs = FileStorage._FileStorage__objects
-        self.assertIn("BaseModel." + bm.id, objs)
-        self.assertIn("User." + us.id, objs)
-        self.assertIn("State." + st.id, objs)
-        self.assertIn("Place." + pl.id, objs)
-        self.assertIn("City." + cy.id, objs)
-        self.assertIn("Amenity." + am.id, objs)
-        self.assertIn("Review." + rv.id, objs)"""
+    """
+    def test_reload(self):
+    """
 
     def test_reload_with_arg(self):
         with self.assertRaises(TypeError):
