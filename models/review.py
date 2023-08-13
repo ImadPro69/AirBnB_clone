@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Review class, a subclass of BaseModel class
+Review class
 """
 from models.base_model import BaseModel
 
