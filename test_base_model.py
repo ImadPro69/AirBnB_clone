@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from models.base_model import BaseModel
+
 #test_base_model.py
 
 my_model = BaseModel()
