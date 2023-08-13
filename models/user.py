@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""user class, subclass of BaseModel
+"""user class
 """
 
 from models.base_model import BaseModel
@@ -7,7 +7,9 @@ import json
 
 
 class User(BaseModel):
-    '''subclass of BaseModel class'''
+    '''
+    subclass of BaseModel class
+    '''
 
     email = ""
     password = ""
